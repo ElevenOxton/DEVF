@@ -24,23 +24,30 @@
         <button id="ingresar" onclick="ingreso()">Ingresar</button>
 
         <div id="menu" class="container  ">
-
-            <div class="col" id="menu2">
-                <label for="ingresoMonto">Esriba el monto que desea ingresar: </label>
-                <input type="text" name="ingresoMonto" id="ingresoMonto" class="form-control" required>
-                <button type="button" onclick="agregar()" class="btn btn-outline-primary">Ingresar monto</button>
-                <p id="montoIngresado"></p>
-                <p id="nuevoSaldo"></p>
-            </div>
-            <div class="col" id="menu3">
-                <label for="ingresoMonto">Escriba el monto que desea retirar: </label>
-                <input type="text" name="ingresoMonto" id="ingresoMontoR"  class="form-control" required>
-                <button type="button" class="btn btn-outline-primary" onclick="retiro()">Retirar monto</button>
-                <p id="saldoRetirado"></p>
-                <p id="nuevoSaldoR"></p>
-            </div>
+            <form action="" id="fAgregar">
+                <div class="col" id="menu2">
+                    <label for="ingresoMonto">Esriba el monto que desea ingresar: </label>
+                    <input type="text" name="ingresoMonto" id="ingresoMonto" class="form-control" required>
+                    <button type="submit" class="btn btn-outline-primary">Ingresar monto</button>
+                    <p id="montoIngresado"></p>
+                    <p id="nuevoSaldo"></p>
+                </div>
+            </form>
+            <form action="" id="fRetirar">
+                <div class="col" id="menu3">
+                    <label for="ingresoMonto">Escriba el monto que desea retirar: </label>
+                    <input type="text" name="ingresoMonto" id="ingresoMontoR"  class="form-control" required>
+                    <button type="submit" class="btn btn-outline-primary">Retirar monto</button>
+                    <p id="saldoRetirado"></p>
+                    <p id="nuevoSaldoR"></p>
+                </div>
+            </form>
             <div class="col" id="menu1">
                 <button type="button" onclick="consulta()" class="btn btn-outline-primary">Consultar saldo</button>
+                <p id="saldoActual"></p>
+            </div>
+            <div class="col" id="menu1">
+                <button type="button" onclick="cierre()" class="btn btn-outline-primary">Cerrar sesión</button>
                 <p id="saldoActual"></p>
             </div>
         </div>
